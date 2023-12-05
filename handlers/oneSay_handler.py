@@ -5,8 +5,7 @@
     @GitHub: https://github.com/Fromsko
     @notes : 一言接口编写入口
 """
-
-from .base_handler import MetaClient, Context, log
+from .chat_handler import MetaClient, Context, log
 from api.one_say import one_api
 
 
@@ -19,7 +18,7 @@ _msg = """\
 
 @MetaClient.hybrid_command()
 async def onesay(ctx: Context):
-    """ 随机一言 """
+    """ Random word """
     resp = one_api()
     text = resp[1]
 
@@ -37,5 +36,5 @@ async def onesay(ctx: Context):
 
 @MetaClient.hybrid_command()
 async def add(ctx: Context, a: int, b: int):
-    """ 加法函数 """
+    """ Addition function """
     await ctx.send(a+b)

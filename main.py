@@ -5,8 +5,10 @@
     @GitHub: https://github.com/kongxiaoaaa
     @notes : Discord Bot
 """
-from config import TOKEN
+from utils import CONFIG
 from handlers.oneSay_handler import MetaClient
 
 if __name__ == "__main__":
-    MetaClient.run(TOKEN)
+    MetaClient.run(
+        CONFIG.get_key('token')
+    )

@@ -2,7 +2,7 @@
 
 > msgBot 一个 demo 级案例
 
-![fn](./config/bot.png)
+![fn](./res/bot.png)
 
 ## 使用
 
@@ -19,7 +19,7 @@
 
 2. 运行成功 (gateway 显示 Session ID 代表运行成功)
 
-   ![running](./config/terminal.png)
+   ![running](./res/terminal.png)
 
 3. 同步服务器
 
@@ -27,11 +27,11 @@
    !synccommands
    ```
 
-   ![sync-commands](./config/sync-commands.png)
+   ![sync-commands](./res/sync-commands.png)
 
 4. 命令反馈
 
-   ![command](./config/call.png)
+   ![command](./res/call.png)
 
 ## 实现
 
